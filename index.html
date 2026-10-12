@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f4c81">
+  <meta name="description" content="Cotiza tratamientos odontológicos y agenda tu cita en DentalCare Cusco.">
+  <title>OdontoPresupuesto | DentalCare S.A.C.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <div id="app">
+    <header class="topbar" id="public-header">
+      <a class="brand" href="#inicio" data-view="inicio" aria-label="DentalCare, ir al inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><path d="M20 4v32M4 20h32"/><circle cx="20" cy="20" r="16"/></svg>
+        </span>
+        <span><strong>DentalCare</strong><small>CLÍNICA ODONTOLÓGICA</small></span>
+      </a>
+      <nav class="public-nav" aria-label="Navegación principal">
+        <a class="nav-link active" href="#inicio" data-public-link="inicio">Inicio</a>
+        <a class="nav-link" href="#catalogo" data-public-link="catalogo">Tratamientos</a>
+        <a class="nav-link" href="#como-funciona" data-public-link="como-funciona">Cómo funciona</a>
+        <a class="nav-link" href="#sedes" data-public-link="sedes">Nuestras sedes</a>
+      </nav>
+      <button class="button button-outline button-small staff-entry" type="button" data-view="login">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5m5 5H3"/></svg>
+        Acceso personal
+      </button>
+    </header>
+
+    <main id="main-content">
+      <section class="view active" id="view-inicio" aria-labelledby="hero-title">
+        <div class="hero">
+          <div class="hero-content">
+            <span class="eyebrow"><span class="eyebrow-dot"></span> TU SALUD, NUESTRA PRIORIDAD</span>
+            <h1 id="hero-title">Una sonrisa sana<br>lo cambia <span>todo.</span></h1>
+            <p>Encuentra el tratamiento ideal para ti. Te ayudamos a planificarlo, con precios claros desde el primer momento.</p>
+            <a href="#catalogo" class="button button-white" data-view="catalogo">Cotizar mi tratamiento <span aria-hidden="true">→</span></a>
+            <div class="hero-note"><span class="trust-icon" aria-hidden="true">✓</span> Atención profesional · Presupuesto sin compromiso</div>
+          </div>
+          <div class="hero-art">
+            <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+            <div class="clinic-photo-frame">
+              <img class="clinic-photo" src="assets/centro-odontologico.jpg" alt="Odontólogo atendiendo a una paciente en una clínica dental moderna" fetchpriority="high">
+              <div class="clinic-photo-caption"><span class="photo-status"></span><span><strong>Atención profesional</strong><small>Un equipo que cuida de ti</small></span></div>
+            </div>
+            <div class="tooth-badge" aria-label="Ilustración decorativa de un diente"><img src="assets/diente.svg" alt=""></div>
+            <div class="sparkle sparkle-a" aria-hidden="true">✦</div><div class="sparkle sparkle-b" aria-hidden="true">✦</div>
+            <div class="floating-note" aria-hidden="true"><span class="note-icon">✧</span><span><strong>Sonríe con confianza</strong><small>Nosotros te acompañamos</small></span></div>
+            <div class="hero-stats" aria-hidden="true"><strong>+12 años</strong><span>cuidando sonrisas</span></div>
+          </div>
+          <div class="hero-bottom"><span>01 / 04</span><span class="hero-progress"><i></i></span><span>Odontología para todos</span></div>
+        </div>
+
+        <section class="home-shortcuts page-container" aria-label="Explora DentalCare">
+          <a class="home-shortcut" href="#catalogo" data-view="catalogo"><span class="shortcut-icon">✚</span><span><strong>Explora tratamientos</strong><small>Servicios y precios claros</small></span><span class="shortcut-arrow">→</span></a>
+          <a class="home-shortcut" href="#como-funciona" data-public-link="como-funciona"><span class="shortcut-icon">☷</span><span><strong>Conoce cómo funciona</strong><small>Tu presupuesto en tres pasos</small></span><span class="shortcut-arrow">→</span></a>
+          <a class="home-shortcut" href="#sedes" data-public-link="sedes"><span class="shortcut-icon">⌖</span><span><strong>Encuentra tu sede</strong><small>Visítanos en Cusco</small></span><span class="shortcut-arrow">→</span></a>
+        </section>
+        <section class="reviews-section" aria-labelledby="reviews-title">
+          <div class="page-container">
+            <div class="reviews-heading">
+              <div><span class="eyebrow eyebrow-blue">SONRISAS QUE NOS INSPIRAN</span><h2 id="reviews-title">Lo que valoran nuestros pacientes</h2><p>La confianza y la tranquilidad también forman parte de cada consulta.</p></div>
+              <span class="reviews-demo-note">Testimonios de ejemplo</span>
+            </div>
+            <div class="reviews-grid">
+              <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Me explicaron cada paso con mucha paciencia. Me sentí tranquila desde la primera evaluación.”</blockquote><div class="review-author"><span class="review-avatar avatar-blue">M</span><span><strong>Paciente de DentalCare</strong><small>Atención odontológica</small></span></div></article>
+              <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“Pude revisar el presupuesto antes de ir y elegir las cuotas que mejor se acomodaban a mí.”</blockquote><div class="review-author"><span class="review-avatar avatar-teal">A</span><span><strong>Paciente de DentalCare</strong><small>Plan de tratamiento</small></span></div></article>
+              <article class="review-card"><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div><blockquote>“El equipo fue muy amable y me ayudó a encontrar un horario y una sede convenientes.”</blockquote><div class="review-author"><span class="review-avatar avatar-gold">C</span><span><strong>Paciente de DentalCare</strong><small>Reserva de cita</small></span></div></article>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="view-catalogo" aria-label="Catálogo de tratamientos" hidden>
+        <section class="catalog-section page-container" id="tratamientos">
+          <div class="section-heading">
+            <div><span class="eyebrow eyebrow-blue">CUIDAMOS DE TI</span><h1>Encuentra tu tratamiento</h1><p>Selecciona uno o varios servicios para preparar tu presupuesto personalizado.</p></div>
+            <div class="secure-note"><span aria-hidden="true">♧</span> Precios referenciales en soles</div>
+          </div>
+          <div class="catalog-layout">
+            <div class="treatment-groups" id="treatment-groups" aria-live="polite"></div>
+            <aside class="quote-card" aria-labelledby="quote-title">
+              <div class="quote-card-head"><div class="quote-icon" aria-hidden="true">✳</div><div><h3 id="quote-title">Tu presupuesto</h3><p>Se actualiza al instante</p></div><span class="item-count" id="item-count">0</span></div>
+              <div class="quote-empty" id="quote-empty"><span class="empty-icon" aria-hidden="true">＋</span><p>Aún no has seleccionado<br>ningún tratamiento.</p><small>Elige un servicio para empezar</small></div>
+              <ul class="quote-items" id="quote-items" aria-label="Tratamientos seleccionados"></ul>
+              <div class="quote-calculation"><div class="quote-subtotal"><span>Subtotal</span><strong id="subtotal">S/ 0.00</strong></div><p><span>✦</span> Obtén 10% de descuento pagando al contado</p><div class="quote-total"><span>Total referencial</span><strong id="quote-total">S/ 0.00</strong></div></div>
+              <button class="button button-primary button-full" id="simulate-button" type="button" disabled>Simular formas de pago <span aria-hidden="true">→</span></button>
+              <p class="quote-disclaimer">El presupuesto final se confirma después de una evaluación clínica.</p>
+            </aside>
+          </div>
+        </section>
+      </section>
+
+      <section class="view" id="view-como-funciona" aria-labelledby="how-title" hidden>
+        <section class="how-section how-page" id="como-funciona"><div class="page-container"><span class="eyebrow eyebrow-blue">SENCILLO Y TRANSPARENTE</span><h1 id="how-title">Tu nueva sonrisa, en tres pasos</h1><p class="page-lead">Un proceso sencillo y claro para empezar a cuidar tu salud dental.</p><div class="steps-grid"><article class="step-card"><span>01</span><div class="step-icon">☷</div><h3>Elige tus tratamientos</h3><p>Explora nuestros servicios y arma tu presupuesto a tu medida.</p></article><article class="step-card"><span>02</span><div class="step-icon">↗</div><h3>Revisa tus opciones</h3><p>Compara el precio al contado y las alternativas en cuotas.</p></article><article class="step-card"><span>03</span><div class="step-icon">♡</div><h3>Agenda tu evaluación</h3><p>Elige la sede, fecha y hora que mejor se acomoden a ti.</p></article></div><a href="#catalogo" class="button button-primary how-cta" data-view="catalogo">Cotizar mi tratamiento <span aria-hidden="true">→</span></a></div></section>
+      </section>
+
+      <section class="view" id="view-sedes" aria-labelledby="locations-title" hidden>
+        <section class="locations-page" id="sedes">
+          <div class="page-container">
+            <span class="eyebrow eyebrow-blue">ESTAMOS CERCA DE TI</span>
+            <h1 id="locations-title">Visítanos en Cusco</h1>
+            <p class="page-lead">Conoce nuestras sedes y consulta la zona en el mapa antes de visitarnos.</p>
+            <div class="location-cards location-cards-detailed">
+              <article class="location-card location-card-photo">
+                <img class="location-image" src="assets/sede-cusco-centro.jpg" alt="Atención odontológica durante una consulta en la sede Cusco Centro" loading="lazy">
+                <div class="location-card-content"><span class="location-tag">CUSCO</span><h2>Sede Cusco Centro</h2><p>Atención dental cerca del centro de la ciudad.</p><div class="location-meta"><span>◷</span> Lunes a sábado · 9:00 a. m. – 7:00 p. m.</div><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&query=clinica%20odontologica%20Cusco%20Centro%20Cusco%20Peru" target="_blank" rel="noopener noreferrer">Explorar zona en Google Maps <span aria-hidden="true">↗</span></a></div>
+              </article>
+              <article class="location-card location-card-photo">
+                <img class="location-image" src="assets/sede-wanchaq.jpg" alt="Consultorio odontológico moderno y equipado en la sede Wanchaq" loading="lazy">
+                <div class="location-card-content"><span class="location-tag">WANCHAQ</span><h2>Sede Wanchaq</h2><p>Un espacio cómodo y moderno para cuidar tu sonrisa.</p><div class="location-meta"><span>◷</span> Lunes a sábado · 9:00 a. m. – 7:00 p. m.</div><a class="location-map-link" href="https://www.google.com/maps/search/?api=1&query=clinica%20odontologica%20Wanchaq%20Cusco%20Peru" target="_blank" rel="noopener noreferrer">Explorar zona en Google Maps <span aria-hidden="true">↗</span></a></div>
+              </article>
+            </div>
+            <p class="locations-disclaimer">Las ubicaciones del mapa son búsquedas por zona; confirma la dirección exacta con nuestro equipo al reservar.</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="view flow-view" id="view-simulador" aria-labelledby="sim-title" hidden>
+        <div class="flow-shell">
+          <button class="back-link" type="button" data-view="catalogo">← Volver a tratamientos</button>
+          <div class="flow-title"><span class="eyebrow eyebrow-blue">TU PRESUPUESTO PERSONALIZADO</span><h1 id="sim-title">Elige cómo quieres pagar</h1><p>Compara las opciones disponibles para tus tratamientos.</p></div>
+          <div class="progress-steps" aria-label="Progreso de cotización"><span class="progress-step complete"><i>✓</i> Tratamientos</span><span class="progress-line complete"></span><span class="progress-step current"><i>2</i> Formas de pago</span><span class="progress-line"></span><span class="progress-step"><i>3</i> Reserva</span></div>
+          <div class="payment-grid">
+            <article class="payment-card cash-card"><div class="payment-card-top"><span class="payment-icon">✧</span><span class="recommend-label">RECOMENDADO</span></div><h2>Pago al contado</h2><p>La mejor opción para ahorrar en tu tratamiento.</p><div class="cash-prices"><span class="old-price" id="cash-original">S/ 0.00</span><strong id="cash-total">S/ 0.00</strong></div><div class="saving-banner"><span>✦</span> Ahorras <strong id="cash-saving">S/ 0.00</strong> con 10% de descuento</div><ul class="payment-benefits"><li>✓ Descuento aplicado automáticamente</li><li>✓ Sin intereses ni cargos adicionales</li><li>✓ Paga en una sola cuota</li></ul><button class="button button-primary button-full choose-payment" data-payment="contado" type="button">Elegir pago al contado <span>→</span></button></article>
+            <article class="payment-card installments-card"><div class="payment-card-top"><span class="payment-icon turquoise">◷</span><span class="flexible-label">A TU RITMO</span></div><h2>Financia en cuotas</h2><p>Distribuye el pago y cuida tu presupuesto.</p><div class="term-selector" role="group" aria-label="Seleccionar número de cuotas"><button type="button" data-term="3" aria-pressed="false">3 meses</button><button type="button" data-term="6" aria-pressed="true">6 meses</button><button type="button" data-term="12" aria-pressed="false">12 meses</button></div><div class="monthly-amount"><span>Tu cuota mensual</span><strong id="monthly-total">S/ 0.00</strong><small id="installment-description">6 cuotas mensuales referenciales</small></div><div class="installment-total"><span>Total financiado</span><strong id="installment-total">S/ 0.00</strong></div><div class="info-banner"><span>ⓘ</span> Cuotas referenciales sin intereses. Condiciones sujetas a evaluación.</div><button class="button button-turquoise button-full choose-payment" data-payment="cuotas" type="button">Elegir pago en cuotas <span>→</span></button></article>
+          </div>
+          <div class="included-summary"><div><span class="summary-check">✓</span><div><strong id="sim-treatment-count">0 tratamientos seleccionados</strong><small id="sim-treatment-list"></small></div></div><button type="button" data-view="catalogo">Editar selección</button><strong id="sim-subtotal">S/ 0.00</strong></div>
+          <p class="flow-footnote">Los precios son referenciales y serán confirmados por el especialista durante tu evaluación.</p>
+        </div>
+      </section>
+
+      <section class="view flow-view" id="view-reserva" aria-labelledby="reserve-title" hidden>
+        <div class="flow-shell reserve-shell">
+          <button class="back-link" type="button" data-view="simulador">← Volver a formas de pago</button>
+          <div class="flow-title"><span class="eyebrow eyebrow-blue">UN PASO MÁS</span><h1 id="reserve-title">Agenda tu evaluación</h1><p>Déjanos tus datos y coordinaremos contigo la confirmación de tu cita.</p></div>
+          <div class="progress-steps" aria-label="Progreso de cotización"><span class="progress-step complete"><i>✓</i> Tratamientos</span><span class="progress-line complete"></span><span class="progress-step complete"><i>✓</i> Forma de pago</span><span class="progress-line complete"></span><span class="progress-step current"><i>3</i> Reserva</span></div>
+          <div class="reserve-layout">
+            <form class="form-card" id="reservation-form">
+              <div class="form-section-heading"><span class="form-step-number">01</span><div><h2>Tus datos de contacto</h2><p>Usaremos esta información para coordinar tu cita.</p></div></div>
+              <div class="form-grid"><label class="field field-full">Nombres y apellidos <span class="required">*</span><input type="text" name="name" placeholder="Ej. María Fernanda Quispe" autocomplete="name" minlength="3" maxlength="100" required><span class="field-error"></span></label><label class="field">DNI <span class="required">*</span><input type="text" name="dni" placeholder="8 dígitos" inputmode="numeric" autocomplete="off" pattern="[0-9]{8}" maxlength="8" required><span class="field-error"></span></label><label class="field">Teléfono / WhatsApp <span class="required">*</span><input type="tel" name="phone" placeholder="987654321" inputmode="tel" autocomplete="tel" pattern="[0-9]{9}" maxlength="9" required><span class="field-error"></span></label></div>
+              <div class="form-section-heading appointment-heading"><span class="form-step-number">02</span><div><h2>¿Cuándo te gustaría venir?</h2><p>Selecciona la sede y tu horario preferido.</p></div></div>
+              <div class="form-grid"><label class="field field-full">Sede <span class="required">*</span><select name="branch" required><option value="">Selecciona una sede</option><option value="Sede Cusco Centro">Sede Cusco Centro</option><option value="Sede Wanchaq">Sede Wanchaq</option></select></label><label class="field">Fecha preferida <span class="required">*</span><input type="date" name="date" required><span class="field-hint">Atención de lunes a sábado</span><span class="field-error">Elige una fecha de lunes a sábado.</span></label><label class="field">Hora preferida <span class="required">*</span><select name="time" required><option value="">Selecciona una hora</option><option>09:00 a. m.</option><option>10:00 a. m.</option><option>11:00 a. m.</option><option>12:00 p. m.</option><option>02:00 p. m.</option><option>03:00 p. m.</option><option>04:00 p. m.</option><option>05:00 p. m.</option><option>06:00 p. m.</option></select></label></div>
+              <label class="consent-check"><input type="checkbox" name="consent" required><span>Autorizo a DentalCare a contactarme para coordinar mi cita. <a href="#privacidad">Conoce nuestra política de privacidad.</a></span></label>
+              <button class="button button-primary button-full reserve-submit" type="submit">Confirmar reserva <span aria-hidden="true">→</span></button>
+              <p class="form-secure-note"><span aria-hidden="true">♧</span> Tus datos se usan únicamente para gestionar tu solicitud.</p>
+            </form>
+            <aside class="reservation-summary"><div class="summary-title"><span class="quote-icon">✳</span><div><h2>Resumen de tu presupuesto</h2><p>Tu selección y forma de pago</p></div></div><ul id="reserve-items" class="reserve-items"></ul><div class="reservation-payment"><span>Forma de pago elegida</span><strong id="reserve-payment-label">—</strong></div><div class="reservation-total"><span>Total referencial</span><strong id="reserve-total">S/ 0.00</strong><small id="reserve-payment-detail"></small></div><div class="summary-advisor"><span>♡</span><p><strong>Tu evaluación es importante</strong><br>El especialista confirmará tu plan ideal en consulta.</p></div></aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="view confirmation-view" id="view-confirmacion" aria-labelledby="confirmation-title" hidden>
+        <div class="confirmation-card"><span class="confirmation-check" aria-hidden="true">✓</span><span class="eyebrow eyebrow-blue">SOLICITUD REGISTRADA</span><h1 id="confirmation-title">¡Gracias por confiar en nosotros!</h1><p>Tu solicitud de cita ya está registrada. Nuestro equipo de DentalCare se comunicará contigo para confirmarla.</p><div class="confirmation-reference"><span>Número de solicitud</span><strong id="confirmation-id">—</strong></div><div class="confirmation-details" id="confirmation-details"></div><button class="button button-primary" type="button" data-view="catalogo">Volver al inicio</button></div>
+      </section>
+
+      <section class="view login-view" id="view-login" aria-labelledby="login-title" hidden>
+        <div class="login-card"><a class="brand login-brand" href="#catalogo" data-view="catalogo"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 4v32M4 20h32"/><circle cx="20" cy="20" r="16"/></svg></span><span><strong>DentalCare</strong><small>CLÍNICA ODONTOLÓGICA</small></span></a><span class="eyebrow eyebrow-blue">ÁREA DE PERSONAL</span><h1 id="login-title">Bienvenido de vuelta</h1><p>Ingresa a tu cuenta para gestionar las citas.</p><form id="login-form"><label class="field">Usuario<input name="username" type="text" placeholder="Ingresa tu usuario" autocomplete="username" required></label><label class="field">Contraseña<input name="password" type="password" placeholder="Ingresa tu contraseña" autocomplete="current-password" required></label><p class="login-error" id="login-error" role="alert" hidden></p><button class="button button-primary button-full" type="submit">Ingresar al sistema <span>→</span></button></form><div class="demo-hint"><strong>Acceso de demostración</strong><span>Usuario: <code>admin</code> · Contraseña: <code>dentalcare</code></span></div><button class="back-link login-back" type="button" data-view="catalogo">← Volver al portal de pacientes</button></div>
+      </section>
+
+      <section class="view admin-view" id="view-admin" aria-label="Panel administrativo" hidden>
+        <aside class="admin-sidebar" id="admin-sidebar"><a class="brand admin-brand" href="#" data-admin-tab="inicio"><span class="brand-mark"><svg viewBox="0 0 40 40"><path d="M20 4v32M4 20h32"/><circle cx="20" cy="20" r="16"/></svg></span><span><strong>DentalCare</strong><small>ADMINISTRACIÓN</small></span></a><div class="sidebar-label">MENÚ PRINCIPAL</div><nav class="admin-nav" aria-label="Administración"><button class="admin-nav-item active" data-admin-tab="inicio"><span>⌂</span>Inicio</button><button class="admin-nav-item" data-admin-tab="citas"><span>▦</span>Gestión de citas</button><button class="admin-nav-item" data-admin-tab="tarifario"><span>＋</span>Tarifario de tratamientos</button><button class="admin-nav-item" data-admin-tab="historial"><span>◷</span>Historial de cotizaciones</button></nav><div class="sidebar-bottom"><div class="sidebar-user"><span class="user-avatar">AD</span><span><strong>Administrador</strong><small>Recepción</small></span></div><button class="admin-nav-item logout-button" id="logout-button"><span>↪</span>Cerrar sesión</button></div></aside>
+        <div class="admin-main"><header class="admin-topbar"><div><span class="eyebrow eyebrow-blue">DENTALCARE S.A.C.</span><h1 id="admin-page-title">Inicio</h1></div><div class="admin-date" id="admin-date"></div><button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú administrativo" aria-expanded="false">☰</button></header>
+          <div class="admin-content" id="admin-tab-inicio"><div class="admin-welcome"><div><span class="eyebrow">PANEL DE CONTROL</span><h2>Buenos días, equipo <span>✦</span></h2><p>Este es el resumen de actividad de DentalCare.</p></div><button class="button button-primary" data-admin-tab="citas">Ver citas <span>→</span></button></div><div class="stats-grid"><article class="stat-card"><span class="stat-icon stat-blue">▦</span><span class="stat-label">Total de citas</span><strong id="stat-total">0</strong><small>Solicitudes registradas</small></article><article class="stat-card"><span class="stat-icon stat-yellow">◷</span><span class="stat-label">Pendientes</span><strong id="stat-pending">0</strong><small>Esperando confirmación</small></article><article class="stat-card"><span class="stat-icon stat-green">✓</span><span class="stat-label">Confirmadas</span><strong id="stat-confirmed">0</strong><small>Listas para atender</small></article><article class="stat-card"><span class="stat-icon stat-teal">S/</span><span class="stat-label">Presupuestos</span><strong id="stat-amount">S/ 0</strong><small>Total de cotizaciones</small></article></div><section class="admin-panel"><div class="panel-heading"><div><h2>Citas recientes</h2><p>Las últimas solicitudes de tus pacientes</p></div><button class="text-button" data-admin-tab="citas">Ver todas <span>→</span></button></div><div class="table-wrap"><table><thead><tr><th>ID</th><th>Paciente</th><th>Tratamientos</th><th>Sede</th><th>Total S/.</th><th>Estado</th></tr></thead><tbody id="recent-appointments"></tbody></table><div class="table-empty" id="recent-empty">Todavía no hay citas. Tus nuevas solicitudes aparecerán aquí.</div></div></section></div>
+          <div class="admin-content" id="admin-tab-citas" hidden><section class="admin-panel"><div class="panel-heading"><div><h2>Gestión de citas</h2><p>Revisa y actualiza las solicitudes de tus pacientes.</p></div><div class="table-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input id="appointment-search" type="search" placeholder="Buscar paciente o DNI" aria-label="Buscar paciente o DNI"></label><select id="status-filter" aria-label="Filtrar por estado"><option value="">Todos los estados</option><option>Pendiente</option><option>Confirmado</option><option>Atendido</option><option>Cancelado</option></select></div></div><div class="table-wrap"><table><thead><tr><th>ID</th><th>Paciente</th><th>DNI</th><th>Teléfono</th><th>Sede</th><th>Total S/.</th><th>Estado</th><th>Acciones</th></tr></thead><tbody id="appointments-table"></tbody></table><div class="table-empty" id="appointments-empty">No hay citas que coincidan con tu búsqueda.</div></div></section></div>
+          <div class="admin-content" id="admin-tab-tarifario" hidden><section class="admin-panel"><div class="panel-heading"><div><h2>Tarifario de tratamientos</h2><p>Precios referenciales disponibles en el portal de pacientes.</p></div></div><div class="table-wrap"><table><thead><tr><th>Tratamiento</th><th>Categoría</th><th>Descripción</th><th>Precio base</th></tr></thead><tbody id="tariff-table"></tbody></table></div></section></div>
+          <div class="admin-content" id="admin-tab-historial" hidden><section class="admin-panel"><div class="panel-heading"><div><h2>Historial de cotizaciones</h2><p>Todos los presupuestos asociados a solicitudes de cita.</p></div></div><div class="table-wrap"><table><thead><tr><th>ID</th><th>Fecha de solicitud</th><th>Paciente</th><th>Tratamientos</th><th>Forma de pago</th><th>Total S/.</th></tr></thead><tbody id="history-table"></tbody></table><div class="table-empty" id="history-empty">Aún no hay cotizaciones registradas.</div></div></section></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="public-footer"><div class="footer-inner"><a class="brand footer-brand" href="#inicio" data-view="inicio"><span class="brand-mark"><svg viewBox="0 0 40 40"><path d="M20 4v32M4 20h32"/><circle cx="20" cy="20" r="16"/></svg></span><span><strong>DentalCare</strong><small>CLÍNICA ODONTOLÓGICA</small></span></a><p>Una sonrisa sana lo cambia todo.</p><span>© 2025 DentalCare S.A.C. · Cusco, Perú</span></div></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+</body>
+</html>
